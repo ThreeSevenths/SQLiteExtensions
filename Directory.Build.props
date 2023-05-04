@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Version>0.2-pre</Version>
+        <Pack>true</Pack>
+        <PackageOutputPath>$([System.IO.Path]::Combine($(MSBuildThisFileDirectory), 'nupkgs'))</PackageOutputPath>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Authors>Trevor Davis</Authors>
+        <PackageVersion>$(Version)</PackageVersion>
+        <Copyright>Copyright 2023 Trevor Davis</Copyright>
+        <Company>Trevor Davis</Company>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+    <PropertyGroup>
+        <_bin-base>$([System.IO.Path]::Combine($(MSBuildThisFileDirectory), 'bin', 'spellfix'))</_bin-base>
+        <tfm_classic_android>monoandroid9.0</tfm_classic_android>
+        <tfm_classic_ios>xamarin.ios10</tfm_classic_ios>
+        <tfm_net6_ios>net6.0-ios14.2</tfm_net6_ios>
+        <tfm_net6_tvos>net6.0-tvos10</tfm_net6_tvos>
+        <tfm_net6_maccatalyst>net6.0-ios14.0</tfm_net6_maccatalyst>
+        <tfm_net6_android>net6.0-android</tfm_net6_android>
+    </PropertyGroup>
+    <PropertyGroup>
+        <!-- Workaround supposedly for a previous xamarin bug. Copied from Eric's build scripts -->
+        <NoNFloatUsing>true</NoNFloatUsing>
+    </PropertyGroup>
+</Project>

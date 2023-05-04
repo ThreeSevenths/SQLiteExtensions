@@ -1,0 +1,1 @@
+ /nologo /OUT:"bin\spellfix\win\v143\plain\arm64\spellfix.dll" /SUBSYSTEM:CONSOLE /DEBUG:FULL /DEBUGTYPE:CV,FIXUP /INCREMENTAL:NO /OPT:REF /OPT:ICF /TLBID:1 /guard:cf /WINMD:NO /DYNAMICBASE /NXCOMPAT /MACHINE:ARM64 /DLL /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed obj\spellfix\win\v143\plain\arm64\spellfix.obj

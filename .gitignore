@@ -1,0 +1,9 @@
+bin/
+obj/
+*.so
+*.dll
+*.dylib
+*.buildoutput.txt
+nupkgs/
+*.nupkg
+*.nuspec
